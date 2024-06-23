@@ -1,0 +1,330 @@
+<html>
+<head>
+	<title>Restaurant Menu</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="../../bootsrap 5/css/bootstrap.css">
+</head>
+<body>
+	
+	<center>
+	    <div class="title-con">   
+		<div><a href="../../Main.html"class="btn btn-dark text-center p-2 float-left" style="position: absolute; width: 3em; text-decoration: none; left: 0;"> < </a> </div>
+		<h1 style ="font-size: 55px; margin-bottom: 10px;"><b>RESTAURANT MENU</b></h1>	
+		<a href ="#main">Main Dish</a>
+		<a href="#veg">Vegetable</a>
+		<a href="#des">Dessert</a>
+		<a href="#drink">Drink</a>
+		<a href="#add">Add-on</a>
+		<a href="#orders" style="background-color: #FFFFFF; border: 1px solid #2e4478; color:#2e4478;">Your Orders</a>
+		</div>
+<div class="foods">
+
+	<div class="main-title">
+		<h2>Main Dish</h2>
+	</div>
+	<section class="main-dish" id="main">
+			<div>
+				<img src="photos/chicken-cordon-bleu-inside2-WR-768x1024.jpg" alt="Chicken Cordon Bleu">
+				<p>Chicken Cordon Bleu<br><b>P100</b></p>
+				<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+				<input class="input-button" type="button" onclick="getPrice('Chicken Cordon Bleu', 100, event)" value="Add to Order"></input>	
+			</div>
+			<div>
+				<img src="photos/Filipino-Adobo.jpg" alt="">
+				<p>Adobong Manok<br><b>P200</b></p>
+				<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+				<input class="input-button" type="button" onclick="getPrice('Adobong Manok', 200, event)" value="Add to Order"></input>
+			</div>
+			<div>
+				<img src="photos/garlic-parmesan-wings-1200t.jpg" alt="">
+				<p>Garlic Parmesan<br><b>P300</b></p>
+				<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+				<input class="input-button" type="button" onclick="getPrice('Garlic Parmesan', 300, event)" value="Add to Order"></input>	
+			</div>
+			<div>
+				<img src="photos/RM-237899-FilippinoLechonKawali-ddmfs-3x4-6354-acd2f1895a5c4c8a92ad4d33d48bc837.jpg" alt="">
+				<p>Lechon Kawali<br><b>P300</b></p>
+				<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+				<input class="input-button" type="button" onclick="getPrice('Lechon Kawali', 300, event)" value="Add to Order"></input>	
+			</div>
+			<div>
+				<img src="photos/Crispy-Fried-Chicken_EXPS_TOHJJ22_6445_DR-_02_03_11b.jpg" alt="">
+				<p>Fried Chicken<br><b>P150</b></p>
+				<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+				<input class="input-button" type="button" onclick="getPrice('Fried Chicken', 150, event)" value="Add to Order"></input>	
+			</div>
+	</section>
+	<hr>
+		<div class="main-title">
+			<h2>Vegetables</h2>
+		</div>
+	<section class="veg-con" id="veg">
+		<div>
+			<img src="photos/pinakbet-featured-img.jpg" alt="">
+			<p>Pinakbet<br><b>P80</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Pinakbet', 80, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/ginataang-puso-saging-4.jpg" alt="">
+			<p>Ginataang Puso<br><b>P90</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Ginataang Puso', 90, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/Lumpiang_Gulay_Filipino_sweetsimplevegan_23.jpg" alt="">
+			<p>Lumpiang Gulay<br><b>P70</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Lumpiang Gulay', 70, event)" value="Add to Order"></input>
+		</div>
+	</section>
+	<hr>
+		<div class="main-title">
+			<h2>Dessert</h2>
+		</div>
+	<section class="des-con" id="des">
+		<div>
+			<img src="photos/20210723-Leche-Flan-Rezel-17-3bdcb943a559409d9b62976818423d96.jpg" alt="">
+			<p>Leche Flan<br><b>P50</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Leche Flan', 50, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/tiramisu-square.jpg" alt="">
+			<p>Tiramisu<br><b>P60</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Tiramisu', 60, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/filipino-fruit-salad-640-500x375.jpg" alt="">
+			<p>Fruit Salad<br><b>P50</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Fruit Salad', 50, event)" value="Add to Order"></input>
+		</div>
+
+	</section>
+	<hr>
+		<div class="main-title">
+			<h2>Drinks</h2>
+		</div>
+	<section class="drink-con" id="drink">
+		<div>
+			<img src="photos/s-l1200.jpg" alt="">
+			<p>Softdrinks (Coke, Sprite, Royal)<br><b>P25</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Softdrinks', 25, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/Iced-Tea-SQ-1.jpg" alt="">
+			<p>Iced Tea<br><b>P20</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Iced Tea', 20, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/How-to-Juice-a-Pineapple-Square.jpeg" alt="">
+			<p>Pineapple Juice<br><b>P20</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Pineapple Juice', 20, event)" value="Add to Order"></input>
+		</div>
+
+	</section>	
+	
+	<hr>
+		<div class="main-title">
+			<h2>Add-ons</h2>
+		</div>
+	<section class="add-on" id="add">
+		<div>
+			<img src="photos/mojo-potato-recipe.jpg" alt="">
+			<p>Mojos<br><b>P35</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Mojos', 35, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/Copycat-McDonalds-French-Fries-.jpg" alt="">
+			<p>Fries<br><b>P45</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Fries', 45, event)" value="Add to Order"></input>
+		</div>
+		<div>
+			<img src="photos/Crispy-Kangkong.jpg" alt="">
+			<p>Kangkong Chips<br><b>P20</b></p>
+			<input class="order-quantity" type="number" placeholder="Qty" min="1" max="99"></input>
+			<input class="input-button" type="button" onclick="getPrice('Kangkong Chips', 20, event)" value="Add to Order"></input>
+		</div>
+	</section>
+	
+	<hr>
+	
+	<div class="order-main-container">
+		<h1>Orders</h1>	
+		<p id="no-order">No Orders yet.</p>
+			<section id="orders">
+				
+			</section>
+		
+		<p id="totalprice"></p>
+	</div>
+	
+	
+</center>
+</div>
+</body>
+
+<style>
+*{
+	scroll-behavior: smooth;
+}
+body{
+	position: relative;
+	font-family: 'Century';
+	max-width: 1920px;
+	min-width: 1280px;
+}
+
+
+.title-con{
+	overflow: none;
+	left: 0;
+	 height: 140px;  
+	 width: 100vw;
+	 top: 0;
+	 position: fixed;
+	 z-index: 1000;
+	 background-color: #F8F9F9;
+}
+
+.title-con h1{
+	margin-top: 10px;
+}
+
+
+.title-con a{
+	margin-right: 10px;
+	background-color: #2e4478;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	color: #FFFFFF;
+	border-radius: 10px;
+	
+}
+.main-dish{
+	
+	overflow: none;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    width: 100vw;
+	height: 100vh;
+}
+
+.main-dish div{
+	margin-right: 60px;
+}
+
+
+.veg-con{
+	scroll-behavior: smooth;
+	overflow: none;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    width: 100vw;
+	height: 100vh;
+}
+
+
+.veg-con div{
+	margin-right: 60px;
+}
+
+.des-con{
+	overflow: none;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    width: 100vw;
+	height: 100vh;
+}
+
+.des-con div{
+	margin-right: 60px;
+}
+
+
+.drink-con{
+	overflow: none;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    width: 100vw;
+	height: 100vh;
+}
+.drink-con div{
+	margin-right: 60px;
+}
+
+.add-on{
+	overflow: none;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    width: 100vw;
+	height: 100vh;
+}
+
+.add-on div{
+	margin-right: 60px;
+}
+.foods{
+    padding-top: 70px;
+}
+
+.main-title{
+	overflow: none;
+	font-size: 40px;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	position: relative;
+	top: 20vh;
+	color: #3067A6;
+	
+}
+
+.foods img{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.foods p{
+	font-size: 25px;
+}
+
+.order-quantity{
+	width: 60px;
+}
+
+.input-button{
+	background-color: #2e4478;
+	color: white;
+	
+}
+
+.order-main-container{
+	height: 80vh;
+}
+
+.order-main-container h1{
+	font-size: 40px;
+	color: #3067A6;
+}
+
+
+
+</style>
+
+
+</html>
